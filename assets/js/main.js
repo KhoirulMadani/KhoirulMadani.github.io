@@ -180,7 +180,7 @@ const selectedIcon = localStorage.getItem("selected-icon");
 const getCurrentTheme = () =>
   document.body.classList.contains(darkTheme) ? "light" : "dark";
 const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "uil-sun" : "uil-moon";
+  themeButton.classList.contains(iconTheme) ? "uil-moon" : "uil-sun";
 
 // We validate if the user previously chose a topic
 if (selectedTheme) {

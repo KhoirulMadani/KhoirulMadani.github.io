@@ -170,7 +170,7 @@ window.addEventListener("scroll", scrollUp);
 /*==================== DARK LIGHT THEME ====================*/
 const themeButton = document.getElementById("theme-button");
 const darkTheme = "dark-theme";
-const iconTheme = "uil-sun";
+const iconTheme = "uil-moon";
 
 // Previously selected topic (if user selected)
 const selectedTheme = localStorage.getItem("selected-theme");
@@ -192,12 +192,12 @@ if (selectedTheme) {
     iconTheme
   );
 }
-
+// debugger;
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener("click", () => {
   // Add or remove the dark / icon theme
   document.body.classList.toggle(darkTheme);
-  themeButton.classList.toggle(iconTheme);
+  themeButton.classList.toggle("uil-sun");
   // We save the theme and the current icon that the user chose
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
